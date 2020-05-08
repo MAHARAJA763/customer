@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="card">
+        <h4 class="card-title">Login</h4>
+        <div class="card-body">
+            <form [formGroup]=RegisetrFormGroup>
+                <div><input type="text" formControlName="firstName" placeholder="Enter your First Name"></div>
+                <div><input type="text" formControlName="LastName" placeholder="Enter your Last Name"></div>
+                <div><input type="text" formControlName="email" placeholder="Enter your Email"></div>
+                <div><input type="password" formControlName="password" placeholder="Enter your Password"></div>
+                <div><input type="password" formControlName="confirmPassword" placeholder="Confirm your password"></div>
+                <div><input type="text" formControlName="contact" placeholder="Enter your Mobile Number"></div>
+                <div><input type="text" formControlName="Gender" placeholder="Enter your gender Male Or Female"></div>
+                <div><input type="date" formControlName="dob"></div>
+                <div><input type="text" formControlName="address" placeholder="Enter your address"></div>
+                <div>
+                    <button class="btn btn-primary" (click)="register()">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
